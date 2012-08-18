@@ -2,10 +2,9 @@
 define('ROOT_DIR', realpath(dirname(__FILE__)) .'/');
 define('CONTENT_DIR', ROOT_DIR .'content/');
 
-//Change this to your strapdown.js location before using!
-//$strapdown_location = "/strapdown.js";
+//Change this to your strapdown.js location before using! Edit the theme tag below to use different Bootswatch themes.
+//$strapdown_location = "/strapdown.js"; //use local strapdown.js (recommended)
 $strapdown_location = "http://strapdownjs.com/v/0.1/strapdown.js";
-
 
 // Get request url and script url
 $url = '';
@@ -30,7 +29,7 @@ else $content = file_get_contents(CONTENT_DIR .'404.txt');
 <!DOCTYPE html>
 <html>
 <title><?php echo ucwords(strtolower($url)); ?></title>
-<xmp theme="united" style="display:none;">
+<xmp theme="cerulean" style="display:none;">
 <?php echo $content; ?>
 </xmp>
 <script src="<?php echo $strapdown_location; ?>"></script>
