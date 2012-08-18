@@ -12,4 +12,9 @@ If a file does not exist or cannot be found, content/404.txt will be used in its
 
 ## Markdown
 
-Singularity uses [strapdown.js](http://strapdownjs.com/) to mark up HTML. Strapdown.js also works with various Bootstrap themes.
+Singularity uses [strapdown.js](#credits) to mark up HTML. Strapdown.js also works with various Bootstrap themes.
+
+## Credits
+Copyright (c) 2012 Christopher J. Su  
+Inspired by Pico and Stacey.
+Uses [strapdown.js](http://strapdownjs.com/), which in turn, uses [marked](https://github.com/chjj/marked/) and [Bootstrap](http://twitter.github.com/bootstrap/).
