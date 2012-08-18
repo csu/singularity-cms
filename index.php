@@ -21,4 +21,6 @@ else $file .= '.txt';
 if(file_exists($file)) $content = file_get_contents($file);
 else $content = file_get_contents(CONTENT_DIR .'404.txt');
 
+echo $content;
+
 ?>
