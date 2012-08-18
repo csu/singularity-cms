@@ -1,4 +1,3 @@
-
 <?php
 define('ROOT_DIR', realpath(dirname(__FILE__)) .'/');
 define('CONTENT_DIR', ROOT_DIR .'content/');
@@ -22,14 +21,6 @@ else $file .= '.txt';
 if(file_exists($file)) $content = file_get_contents($file);
 else $content = file_get_contents(CONTENT_DIR .'404.txt');
 
-?>
+echo $content;
 
-<!DOCTYPE html>
-<html>
-<title><?php echo ucwords(strtolower($url)); ?></title>
-<xmp theme="united" style="display:none;">
-<?php echo $content; ?>
-</xmp>
-<script src="http://strapdownjs.com/v/0.1/strapdown.js"></script>
-<!--<script src="/singularity-cms/strapdown.js"></script>-->
-</html>
+?>
