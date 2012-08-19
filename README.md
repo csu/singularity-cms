@@ -2,6 +2,14 @@
 
 Singularity is a simple, flat file CMS which marks up HTML using Markdown. It's short and concise, taking nothing but less than 40 lines of PHP code and an htaccess file.
 
+## Customization
+
+The content directory, file type, and Bootstrap theme can be easily customized by simply editing the PHP variables provided:
+
+	define('CONTENT_DIR', ROOT_DIR .'content/'); //change this to change which folder you want your content to be stored in
+	$bootswatch_theme = "cerulean"; //choose any bootstrap theme included in strapdown.js!
+	$file_format = ".txt"; //change this to choose a file type, be sure to include the period
+
 ## URLs
 
 A file at content/index.html can be accessed at /.  
