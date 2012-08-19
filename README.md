@@ -8,11 +8,12 @@ A file at content/index.html can be accessed at /.
 A file at content/text.txt can be accessed at /text.  
 A file at content/sub/index.txt can be accessed at index.txt.  
 A file at content/sub/text.txt can be accessed at /sub/text.  
-If a file does not exist or cannot be found, content/404.txt will be used in its place. The content directory and other aspects of how Singularity handles URLs can be easily edited.
+If a file does not exist or cannot be found, content/404.txt will be used in its place. The content directory and other aspects of how Singularity handles URLs can be easily edited.  
+The script can also handle different filetypes (just modify one line of PHP).
 
 ## Markdown
 
-Singularity uses [strapdown.js](#credits) to mark up HTML. Strapdown.js also works with various Bootstrap themes.
+Singularity uses [strapdown.js](#credits) to mark up HTML. Strapdown.js also works with various [Bootstrap](#credits) themes. You can easily add your own HTML and CSS styles, headers, and footers. It's as easy as editing a flat HTML file.
 
 ## Credits
 Copyright (c) 2012 Christopher J. Su  
