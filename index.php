@@ -30,7 +30,9 @@ else $content = file_get_contents(CONTENT_DIR .'404' . $file_format);
 ?>
 <!DOCTYPE html>
 <html>
+<head>
 <title><?php echo ucwords(strtolower($url)); ?></title>
+</head>
 <xmp theme="<?php echo $bootswatch_theme; ?>" style="display:none;">
 <?php echo $content; ?>
 </xmp>
