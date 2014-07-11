@@ -2,9 +2,9 @@
 define('ROOT_DIR', realpath(dirname(__FILE__)) .'/');
 define('CONTENT_DIR', ROOT_DIR .'content/'); //change this to change which folder you want your content to be stored in
 
-//Change this to your strapdown.js location before using! Edit the theme tag below to use different Bootswatch themes.
-//$strapdown_location = "/strapdown.js"; //use local strapdown.js (recommended)
-// Version 1: $strapdown_location = "http://strapdownjs.com/v/0.1/strapdown.js";
+// Change this to your strapdown.js location before using! Edit the theme tag below to use different Bootswatch themes.
+// It is recommended that you serve strapdown.js locally, rather than from strapdownjs' website:
+// $strapdown_location = "/strapdown.js";
 $strapdown_location = "http://strapdownjs.com/v/0.2/strapdown.js";
 $bootswatch_theme = "cerulean"; //choose any bootstrap theme included in strapdown.js!
 $file_format = ".txt"; //change this to choose a file type, be sure to include the period
@@ -25,7 +25,7 @@ else $file = CONTENT_DIR .'index';
 if(is_dir($file)) $file = CONTENT_DIR . $url .'/index' . $file_format;
 else $file .=  $file_format;
 
-//Show 404 if file cannot be found
+// Show 404 if file cannot be found
 if(file_exists($file)) $content = file_get_contents($file);
 else $content = file_get_contents(CONTENT_DIR .'404' . $file_format);
 ?>
