@@ -24,8 +24,9 @@ else $file = CONTENT_DIR .'index';
 // Load the file
 if(is_dir($file)) $file = CONTENT_DIR . $url .'/index' . $file_format;
 else $file .=  $file_format;
-if(file_exists($file)) $content = file_get_contents($file);
+
 // Show 404 if file cannot be found
+if(file_exists($file)) $content = file_get_contents($file);
 else $content = file_get_contents(CONTENT_DIR .'404' . $file_format);
 ?>
 <!DOCTYPE html>
