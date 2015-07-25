@@ -5,12 +5,12 @@ define('CONTENT_DIR', ROOT_DIR .'content/'); //change this to change which folde
 // Change this to your strapdown.js location before using! Edit the theme tag below to use different Bootswatch themes.
 // It is recommended that you serve strapdown.js locally, rather than from strapdownjs' website:
 // $strapdown_location = "/strapdown.js";
+$default_title = 'My Website';
 $strapdown_location = "http://strapdownjs.com/v/0.2/strapdown.js";
 $bootswatch_theme = "cerulean"; //choose any bootstrap theme included in strapdown.js!
 $file_format = ".txt"; //change this to choose a file type, be sure to include the period
 
 // Get request url and script url
-$title = 'My new super website';
 $url = '';
 $request_url = (isset($_SERVER['REQUEST_URI'])) ? $_SERVER['REQUEST_URI'] : '';
 $script_url  = (isset($_SERVER['PHP_SELF'])) ? $_SERVER['PHP_SELF'] : '';
@@ -33,7 +33,7 @@ else $content = file_get_contents(CONTENT_DIR .'404' . $file_format);
 <!DOCTYPE html>
 <html>
 <head>
-<title><?php (ucwords(strtolower($url))) ? ucwords(strtolower($url)) : $title; ?></title>
+<title><?php (ucwords(strtolower($url))) ? ucwords(strtolower($url)) : $default_title; ?></title>
 </head>
 <xmp theme="<?php echo $bootswatch_theme; ?>" style="display:none;">
 <?php echo $content; ?>
