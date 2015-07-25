@@ -10,6 +10,7 @@ $bootswatch_theme = "cerulean"; //choose any bootstrap theme included in strapdo
 $file_format = ".txt"; //change this to choose a file type, be sure to include the period
 
 // Get request url and script url
+$title = 'My new super website';
 $url = '';
 $request_url = (isset($_SERVER['REQUEST_URI'])) ? $_SERVER['REQUEST_URI'] : '';
 $script_url  = (isset($_SERVER['PHP_SELF'])) ? $_SERVER['PHP_SELF'] : '';
@@ -32,7 +33,7 @@ else $content = file_get_contents(CONTENT_DIR .'404' . $file_format);
 <!DOCTYPE html>
 <html>
 <head>
-<title><?php echo ucwords(strtolower($url)); ?></title>
+<title><?php (ucwords(strtolower($url))) ? ucwords(strtolower($url)) : $title; ?></title>
 </head>
 <xmp theme="<?php echo $bootswatch_theme; ?>" style="display:none;">
 <?php echo $content; ?>
