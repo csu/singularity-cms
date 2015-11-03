@@ -33,7 +33,7 @@ else $content = file_get_contents(CONTENT_DIR .'404' . $file_format);
 <!DOCTYPE html>
 <html>
 <head>
-<title><?php (ucwords(strtolower($url))) ? ucwords(strtolower($url)) : $default_title; ?></title>
+<title><?php echo (ucwords(strtolower($url))) ? ucwords(strtolower($url)) : $default_title; ?></title>
 </head>
 <xmp theme="<?php echo $bootswatch_theme; ?>" style="display:none;">
 <?php echo $content; ?>
