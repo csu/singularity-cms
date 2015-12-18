@@ -1,5 +1,5 @@
 # Singularity
-Singularity is a simple, flat file CMS which marks up HTML using Markdown. It's short and concise, taking nothing but less than 40 lines of PHP code and an htaccess file.
+Singularity is a simple, flat file CMS which marks up HTML using Markdown. It's short and concise, taking nothing but less than 40 lines of PHP code and an `.htaccess` file. No database necessary.
 
 ## Customization
 The content directory, file type, and Bootstrap theme can be easily customized by simply editing the PHP variables provided:
