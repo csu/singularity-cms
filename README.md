@@ -20,6 +20,6 @@ The script can also handle different filetypes (just modify one line of PHP).
 Singularity uses [strapdown.js](#credits) to mark up HTML. Strapdown.js also works with various [Bootstrap](#credits) themes. You can easily add your own HTML and CSS styles, headers, and footers. It's as easy as editing a flat HTML file.
 
 ## Credits
-Copyright (c) 2012-2014 Christopher J. Su  
+Copyright (c) 2012-2015 Christopher J. Su  
 Inspired by Pico and Stacey.
 Uses [strapdown.js](http://strapdownjs.com/), which in turn, uses [marked](https://github.com/chjj/marked/), Google Code Prettify, Bootswatch, and [Bootstrap](http://twitter.github.com/bootstrap/).
